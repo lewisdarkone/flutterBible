@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reinavalera1960/screens/test_screen.dart';
+import 'package:reinavalera1960/screens/home.dart';
 
 void main() => runApp(NewApp());
 
@@ -10,13 +10,7 @@ class NewApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "RV60",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("New Flutter Version"),
-
-        ),
-        body: TestScreen(),
-      ),
+      home: Home(),
     );
   }
 
