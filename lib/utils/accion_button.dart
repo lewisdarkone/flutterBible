@@ -14,14 +14,14 @@ class ActionButton extends StatelessWidget{
           fontFamily: "Modern Antiqua"
         ),),
         elevation: 6.0,
-        onPressed: () => showMsj(context)
+        onPressed: () => showMsj(context,"Has presionado el button")
       ),
     );
   }
 
-  void showMsj(BuildContext context){
+  void showMsj(BuildContext context, String msj){
     var alerdialog = AlertDialog(
-      title: Text("Hola soy un mensaje"),
+      title: Text(msj),
       content: Text("Aunque usted no lo crea"),
     );
     showDialog(
